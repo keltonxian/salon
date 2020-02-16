@@ -1,0 +1,91 @@
+ManifestFileVersion: 0
+CRC: 85179564
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: salon_ui.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: salon_screenshot.unity3d
+      Dependencies: {}
+    Info_2:
+      Name: salon_kelton_dye.unity3d
+      Dependencies: {}
+    Info_3:
+      Name: salon_tony_dye.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: salon_kobe_dye.unity3d
+      Dependencies: {}
+    Info_5:
+      Name: salon_kelton.unity3d
+      Dependencies:
+        Dependency_0: salon_ui.unity3d
+        Dependency_1: salon_beard_face.unity3d
+        Dependency_2: salon_kelton_vo.unity3d
+        Dependency_3: salon_kelton_base.unity3d
+        Dependency_4: salon_kelton_beard.unity3d
+    Info_6:
+      Name: salon_kobe.unity3d
+      Dependencies:
+        Dependency_0: salon_ui.unity3d
+        Dependency_1: salon_beard_face.unity3d
+        Dependency_2: salon_kobe_beard.unity3d
+        Dependency_3: salon_kobe_base.unity3d
+        Dependency_4: salon_kobe_vo.unity3d
+    Info_7:
+      Name: salon_tony.unity3d
+      Dependencies:
+        Dependency_0: salon_ui.unity3d
+        Dependency_1: salon_beard_face.unity3d
+        Dependency_2: salon_tony_base.unity3d
+        Dependency_3: salon_tony_vo.unity3d
+        Dependency_4: salon_tony_beard.unity3d
+    Info_8:
+      Name: salon_beard_face.unity3d
+      Dependencies: {}
+    Info_9:
+      Name: salon_loading_kelton.unity3d
+      Dependencies:
+        Dependency_0: salon_kelton_vo.unity3d
+        Dependency_1: salon_kelton_base.unity3d
+    Info_10:
+      Name: salon_loading_kobe.unity3d
+      Dependencies:
+        Dependency_0: salon_kobe_base.unity3d
+        Dependency_1: salon_kobe_vo.unity3d
+    Info_11:
+      Name: salon_tex_bg.unity3d
+      Dependencies: {}
+    Info_12:
+      Name: salon_tony_base.unity3d
+      Dependencies: {}
+    Info_13:
+      Name: salon_tony_vo.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: salon_tony_beard.unity3d
+      Dependencies: {}
+    Info_15:
+      Name: salon_kobe_beard.unity3d
+      Dependencies: {}
+    Info_16:
+      Name: salon_kobe_base.unity3d
+      Dependencies: {}
+    Info_17:
+      Name: salon_kobe_vo.unity3d
+      Dependencies: {}
+    Info_18:
+      Name: salon_kelton_vo.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: salon_kelton_base.unity3d
+      Dependencies: {}
+    Info_20:
+      Name: salon_kelton_beard.unity3d
+      Dependencies: {}
+    Info_21:
+      Name: salon_loading_tony.unity3d
+      Dependencies:
+        Dependency_0: salon_tony_base.unity3d
+        Dependency_1: salon_tony_vo.unity3d

@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Popup
+  - Loading
+  - Collider
+  - Capture
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3230445327
+    locked: 0
+  - name: Popup
+    uniqueID: 4108247247
+    locked: 0
+  - name: Loading
+    uniqueID: 4168902745
     locked: 0

@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 2594337035
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1a769f12cb40bcb322764d7c004c4f05
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cb3f6df5cbc4a2990c44c2787bc9553a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/Beard/Art/FaceScar/Scar/2.png
+- Assets/Game/Beard/Art/FaceScar/Scar/3.png
+- Assets/Game/Beard/Art/FaceScar/Red/3.png
+- Assets/Game/Beard/Art/FaceScar/Red/1.png
+- Assets/Game/Beard/Art/FaceScar/Red/2.png
+- Assets/Game/Beard/Art/FaceScar/Red/5.png
+- Assets/Game/Beard/Art/FaceScar/fur.png
+- Assets/Game/Beard/Art/FaceScar/Scar/4.png
+- Assets/Game/Beard/Art/FaceScar/Scar/1.png
+- Assets/Game/Beard/Art/FaceScar/Red/4.png
+Dependencies: []

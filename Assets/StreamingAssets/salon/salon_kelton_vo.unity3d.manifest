@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 2682959673
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6c963e28bfbad374f8c3855eb737834d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/_Common/Model/Kelton/VO/1.mp3
+- Assets/Game/_Common/Model/Kelton/VO/3.mp3
+- Assets/Game/_Common/Model/Kelton/VO/2.mp3
+- Assets/Game/_Common/Model/Kelton/VO/4.mp3
+Dependencies: []

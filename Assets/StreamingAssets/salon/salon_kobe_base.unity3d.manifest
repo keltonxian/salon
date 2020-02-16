@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 3075682266
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 94f5a771c3a9c0dff901dc5376e4f500
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0047d322a2857a060077caaa11894f52
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7ff0dcb4a0e2440cca47cab3dd541a57, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/_Common/Model/Kobe/Hair/hair.png
+- Assets/Game/_Common/Model/Kobe/Emotion/kobe_tex.png
+- Assets/Game/_Common/Model/Kobe/Body/pupil.png
+- Assets/Game/_Common/Model/Kobe/Emotion/kobe_tex_UI_Mat.mat
+- Assets/Game/_Common/Model/Kobe/Emotion/kobe_ske.json
+- Assets/Game/_Common/Model/Kobe/Emotion/kobe_tex_Mat.mat
+- Assets/Game/_Common/Model/Kobe/Emotion/kobe_Data.asset
+- Assets/Game/_Common/Model/Kobe/Emotion/kobe_tex.json
+- Assets/Game/_Common/Model/Kobe/Body/body.png
+- Assets/Game/_Common/Model/Kobe/Body/eye_white.png
+Dependencies: []

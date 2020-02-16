@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 3861646140
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9011b8b85c02ef0818d7273baf41fd33
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7f3bd86e9a725f3111f44f338d5bf461
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4128b38263e0a4bbbb294bd50e83afe4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9e5f7a922f6404370ae3ba211a5148f1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7ff0dcb4a0e2440cca47cab3dd541a57, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 72870c25c913740d7a65551aff989e74, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a002ff7ed462341398dc9fa2f35d3b17, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/Loading/Art/Model/Kelton.prefab
+Dependencies:
+- /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_kelton_vo.unity3d
+- /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_kelton_base.unity3d

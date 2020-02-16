@@ -1,0 +1,58 @@
+ManifestFileVersion: 0
+CRC: 312955984
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 65ffd90550ca2263b5d0d28d3efd762b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6799eaaf08a0d465504c3b895bda745e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/_Common/UI/Audio/swipe_left.mp3
+- Assets/Game/_Common/UI/Audio/tool_select.mp3
+- Assets/Game/_Common/UI/Tip/2.png
+- Assets/Game/_Common/UI/Audio/swipe_right.mp3
+- Assets/Game/_Common/UI/Audio/popup_hide.mp3
+- Assets/Game/_Common/UI/Tip/TipFinger.prefab
+- Assets/Game/_Common/UI/Texture/brush/PenSolid.png
+- Assets/Game/_Common/UI/Audio/blink.mp3
+- Assets/Game/_Common/UI/Common/SelectFrame/SelectFrameAni.prefab
+- Assets/Game/_Common/UI/Common/SelectFrame/SelectFrame.prefab
+- Assets/Game/_Common/UI/Texture/Dot/normal.png
+- Assets/Game/_Common/UI/Texture/Icon/left.png
+- Assets/Game/_Common/UI/Texture/Icon/home.png
+- Assets/Game/_Common/UI/Tip/1.png
+- Assets/Game/_Common/UI/Audio/close.mp3
+- Assets/Game/_Common/UI/Common/SelectTab/SelectTab.prefab
+- Assets/Game/_Common/UI/Audio/tool_end.mp3
+- Assets/Game/_Common/UI/Audio/popup_show.mp3
+- Assets/Game/_Common/UI/Texture/Icon/screenshot.png
+- Assets/Game/_Common/UI/Texture/Dot/selected.png
+- Assets/Game/_Common/UI/Audio/btn.mp3
+- Assets/Game/_Common/UI/Audio/tool_move.mp3
+- Assets/Game/_Common/UI/Texture/Icon/right.png
+Dependencies: []

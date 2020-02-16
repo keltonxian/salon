@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 1565094378
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b415087d1ccdc324c30de68f523e2669
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cb3f6df5cbc4a2990c44c2787bc9553a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/_Common/Model/Kelton/Hair/Dye/3.png
+- Assets/Game/_Common/Model/Kelton/Hair/Dye/4.png
+- Assets/Game/_Common/Model/Kelton/Hair/Dye/2.png
+- Assets/Game/_Common/Model/Kelton/Hair/Dye/1.png
+Dependencies: []

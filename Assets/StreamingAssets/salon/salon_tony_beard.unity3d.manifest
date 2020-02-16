@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 4136895115
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f6f857411f102db4a9fea208609c5a78
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5d253630890f7ea0ed355f4b59844d82
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89fd55fcb96d4494d877359ff0d41bc5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/_Common/Model/Tony/Beard/front.png
+- Assets/Game/_Common/Model/Tony/Beard/bottom.png
+- Assets/Game/_Common/Model/Tony/Beard/BubbleData.asset
+- Assets/Game/_Common/Model/Tony/Beard/middle.png
+- Assets/Game/_Common/Model/Tony/Beard/messy.png
+Dependencies: []

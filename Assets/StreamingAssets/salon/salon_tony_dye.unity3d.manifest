@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 1810380265
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6c8e08d51d241211aa5b1159e8b6aa6e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cb3f6df5cbc4a2990c44c2787bc9553a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/_Common/Model/Tony/Hair/Dye/4.png
+- Assets/Game/_Common/Model/Tony/Hair/Dye/1.png
+- Assets/Game/_Common/Model/Tony/Hair/Dye/3.png
+- Assets/Game/_Common/Model/Tony/Hair/Dye/2.png
+Dependencies: []

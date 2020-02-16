@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 3868177955
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 441b1c4a147cd07e7297e22b34f2faf6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0047d322a2857a060077caaa11894f52
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7ff0dcb4a0e2440cca47cab3dd541a57, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/_Common/Model/Tony/Emotion/robert_Data.asset
+- Assets/Game/_Common/Model/Tony/Body/body.png
+- Assets/Game/_Common/Model/Tony/Emotion/robert_tex_UI_Mat.mat
+- Assets/Game/_Common/Model/Tony/Body/eye_white.png
+- Assets/Game/_Common/Model/Tony/Hair/hair.png
+- Assets/Game/_Common/Model/Tony/Emotion/robert_tex.json
+- Assets/Game/_Common/Model/Tony/Emotion/robert_tex.png
+- Assets/Game/_Common/Model/Tony/Body/pupil.png
+- Assets/Game/_Common/Model/Tony/Emotion/robert_ske.json
+- Assets/Game/_Common/Model/Tony/Emotion/robert_tex_Mat.mat
+Dependencies: []

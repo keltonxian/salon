@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 3801669423
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f6b0cf86ee29c4984a5b169b7e0a2f5f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0047d322a2857a060077caaa11894f52
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7ff0dcb4a0e2440cca47cab3dd541a57, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Game/_Common/Model/Kelton/Body/body.png
+- Assets/Game/_Common/Model/Kelton/Body/glasses.png
+- Assets/Game/_Common/Model/Kelton/Body/pupil.png
+- Assets/Game/_Common/Model/Kelton/Hair/hair.png
+- Assets/Game/_Common/Model/Kelton/Emotion/kelton_tex.json
+- Assets/Game/_Common/Model/Kelton/Emotion/kelton_tex.png
+- Assets/Game/_Common/Model/Kelton/Body/eye_white.png
+- Assets/Game/_Common/Model/Kelton/Emotion/kelton_tex_UI_Mat.mat
+- Assets/Game/_Common/Model/Kelton/Emotion/kelton_Data.asset
+- Assets/Game/_Common/Model/Kelton/Emotion/kelton_ske.json
+Dependencies: []
