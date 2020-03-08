@@ -21,6 +21,9 @@ namespace PureMVC.Command
             Facade.Instance.AddManager<NetworkManager>(ManagerName.Network);
             Facade.Instance.AddManager<UIManager>(ManagerName.UI);
             Facade.Instance.AddManager<EnhancedTextManager>(ManagerName.EnhancedText);
+            Facade.Instance.AddManager<PluginManager>(ManagerName.Plugin);
+            Facade.Instance.AddManager<LockManager>(ManagerName.Lock);
+            Facade.Instance.AddManager<AdsManager>(ManagerName.Ads);
         }
 
         public override void SendNotification(string notificationName, object body = null, string type = null)

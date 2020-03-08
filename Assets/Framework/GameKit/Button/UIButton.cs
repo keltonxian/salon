@@ -39,6 +39,15 @@ public class UIButton : BaseButton, IPointerDownHandler, IPointerUpHandler, IPoi
             return _onClick;
         }
     }
+    [SerializeField]
+    protected Callback.UnityEventV _onAnimDone = new Callback.UnityEventV();
+    public Callback.UnityEventV OnAnimDone
+    {
+        get
+        {
+            return _onAnimDone;
+        }
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -56,6 +65,7 @@ public class UIButton : BaseButton, IPointerDownHandler, IPointerUpHandler, IPoi
         PlayTouchAnim(() =>
         {
             OnTouchDown.Invoke(eventData);
+            OnAnimDone.Invoke();
         });
     }
 
@@ -88,6 +98,7 @@ public class UIButton : BaseButton, IPointerDownHandler, IPointerUpHandler, IPoi
         PlayTouchAnim(() =>
         {
             OnClick.Invoke(eventData);
+            OnAnimDone.Invoke();
         });
     }
 }

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 312955984
+CRC: 1201848162
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 65ffd90550ca2263b5d0d28d3efd762b
+    Hash: 2f39588ccfe0967bf908a60f4d00d8c3
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6799eaaf08a0d465504c3b895bda745e
@@ -49,6 +49,7 @@ Assets:
 - Assets/Game/_Common/UI/Audio/close.mp3
 - Assets/Game/_Common/UI/Common/SelectTab/SelectTab.prefab
 - Assets/Game/_Common/UI/Audio/tool_end.mp3
+- Assets/Game/_Common/UI/Audio/unlock.mp3
 - Assets/Game/_Common/UI/Audio/popup_show.mp3
 - Assets/Game/_Common/UI/Texture/Icon/screenshot.png
 - Assets/Game/_Common/UI/Texture/Dot/selected.png

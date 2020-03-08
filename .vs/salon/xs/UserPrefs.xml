@@ -1,17 +1,34 @@
 ﻿<Properties StartupConfiguration="{1A7F6485-5F6D-61A9-FEC4-013102C77216}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game/Home/Script/HomeView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game/_Common/Popup/Shop/Script/ShopHandler.cs">
     <Files>
       <File FileName="Assets/Framework/PureMVC/Mananger/DataManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Framework/PureMVC/Mananger/Data.cs" />
-      <File FileName="Assets/Framework/PureMVC/Mananger/UIManager.cs" Line="16" Column="37" />
-      <File FileName="Assets/Framework/PureMVC/Mananger/GameManager.cs" Line="58" Column="1" />
-      <File FileName="Assets/Game/Beard/Script/BeardView.cs" Line="161" Column="62" />
-      <File FileName="Assets/Game/Home/Script/HomeManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Framework/PureMVC/Mananger/AudioManager.cs" Line="323" Column="1" />
-      <File FileName="Assets/Framework/PureMVC/Mananger/NetworkManager.cs" Line="306" Column="64" />
-      <File FileName="Assets/Framework/PureMVC/Mananger/AssetBundleManager.cs" Line="241" Column="21" />
-      <File FileName="Assets/Game/Beard/Script/BeardUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Game/Beard/Script/BeardView.cs" Line="87" Column="47" />
+      <File FileName="Assets/Game/Home/Script/HomeManager.cs" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/AudioManager.cs" />
+      <File FileName="Assets/Game/Beard/Script/BeardUI.cs" Line="28" Column="54" />
       <File FileName="Assets/Game/Home/Script/HomeView.cs" Line="1" Column="1" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/EnhancedTextManager.cs" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/NetworkManager.cs" />
+      <File FileName="Assets/Framework/PureMVC/Const/ManagerName.cs" Line="18" Column="32" />
+      <File FileName="Assets/Framework/PureMVC/Core/Base.cs" />
+      <File FileName="Assets/Game/_Common/Popup/Screenshot/Script/Screenshot.cs" Line="23" Column="13" />
+      <File FileName="Assets/Game/_Common/Popup/Shop/Script/ShopController.cs" Line="11" Column="73" />
+      <File FileName="Assets/Game/_Common/Popup/Shop/Script/ShopHandler.cs" Line="163" Column="38" />
+      <File FileName="Assets/Framework/GameKit/UGUI/Script/PopupView.cs" Line="207" Column="33" />
+      <File FileName="Assets/Game/_Common/Popup/Shop/Script/LockItemHandler.cs" Line="93" Column="5" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/AdsManager.cs" Line="65" Column="44" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/LockManager.cs" Line="67" Column="14" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/GameManager.cs" Line="22" Column="71" />
+      <File FileName="Assets/Game/_Common/Popup/Shop/Script/LockItemKit.cs" Line="143" Column="3" />
+      <File FileName="Assets/Game/_Common/Popup/Loading/Script/NetLoading.cs" Line="6" Column="2" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/UIManager.cs" Line="325" Column="47" />
+      <File FileName="Assets/Game/_Common/Popup/MsgBox/Script/MsgBox.cs" Line="11" Column="6" />
+      <File FileName="Assets/Framework/GameKit/CustomMenu/Editor/PackResource.cs" Line="31" Column="81" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/PluginManager.cs" Line="469" Column="10" />
+      <File FileName="Assets/Framework/GameKit/Plugin/StorePlugin.cs" Line="1" Column="19" />
+      <File FileName="Assets/Framework/GameKit/Plugin/SharePlugin.cs" Line="27" Column="20" />
+      <File FileName="Assets/Framework/GameKit/Plugin/InternalPlugin.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,34 +38,32 @@
               <Node name="Framework" expanded="True">
                 <Node name="DragonBones" expanded="True">
                   <Node name="Script" expanded="True">
-                    <Node name="animation" expanded="True" />
-                    <Node name="parser" expanded="True" />
                     <Node name="unity" expanded="True" />
                   </Node>
                 </Node>
                 <Node name="GameKit" expanded="True">
-                  <Node name="Button" expanded="True" />
+                  <Node name="Button" expanded="True">
+                    <Node name="Editor" expanded="True" />
+                  </Node>
                   <Node name="CustomMenu" expanded="True">
                     <Node name="Editor" expanded="True" />
                   </Node>
-                  <Node name="Model" expanded="True" />
-                  <Node name="Painter" expanded="True">
-                    <Node name="Editor" expanded="True" />
-                    <Node name="Script" expanded="True" />
-                  </Node>
-                  <Node name="Scene" expanded="True" />
-                  <Node name="Tool" expanded="True">
-                    <Node name="Script" expanded="True" />
-                  </Node>
+                  <Node name="Plugin" expanded="True" />
                   <Node name="UGUI" expanded="True">
-                    <Node name="Editor" expanded="True" />
                     <Node name="Script" expanded="True" />
                   </Node>
-                  <Node name="Util" expanded="True" />
+                  <Node name="Util" expanded="True">
+                    <Node name="Editor" expanded="True" />
+                  </Node>
                 </Node>
                 <Node name="PureMVC" expanded="True">
+                  <Node name="Command" expanded="True" />
                   <Node name="Const" expanded="True" />
+                  <Node name="Core" expanded="True" />
                   <Node name="Mananger" expanded="True" />
+                  <Node name="Patterns" expanded="True">
+                    <Node name="Facade" expanded="True" />
+                  </Node>
                 </Node>
                 <Node name="Sqlitekit" expanded="True">
                   <Node name="Editor" expanded="True" />
@@ -60,8 +75,19 @@
                     <Node name="Script" expanded="True" />
                   </Node>
                   <Node name="Popup" expanded="True">
+                    <Node name="Loading" expanded="True">
+                      <Node name="Script" expanded="True" />
+                    </Node>
+                    <Node name="MsgBox" expanded="True">
+                      <Node name="Script" expanded="True" />
+                    </Node>
                     <Node name="Screenshot" expanded="True">
                       <Node name="Script" expanded="True" />
+                    </Node>
+                    <Node name="Shop" expanded="True">
+                      <Node name="Script" expanded="True">
+                        <Node name="ShopHandler.cs" selected="True" />
+                      </Node>
                     </Node>
                   </Node>
                 </Node>
@@ -69,9 +95,7 @@
                   <Node name="Script" expanded="True" />
                 </Node>
                 <Node name="Home" expanded="True">
-                  <Node name="Script" expanded="True">
-                    <Node name="HomeView.cs" selected="True" />
-                  </Node>
+                  <Node name="Script" expanded="True" />
                 </Node>
                 <Node name="Loading" expanded="True">
                   <Node name="Script" expanded="True" />
@@ -85,7 +109,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b0db1c87-276e-40f7-a9e3-d44f4c60962a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="121c1707-c111-49f3-9829-414e6050e2c1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

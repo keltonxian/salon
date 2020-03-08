@@ -17,6 +17,15 @@ namespace PureMVC.Manager
                 return _instance;
             }
         }
+
+        private const string KEY_FULL_IOS = "com.kwork.salon.full";
+        private const string KEY_FULL_ANDROID = "com.kwork.salon.full·";
+
+        public string KEY_FULL
+        {
+            get { return (Application.platform == RuntimePlatform.IPhonePlayer ? KEY_FULL_IOS : KEY_FULL_ANDROID); }
+        }
+
         private string _nextSceneName;
         private AsyncOperation _asyncOperation;
         private bool _isLoadingNextScene = false;

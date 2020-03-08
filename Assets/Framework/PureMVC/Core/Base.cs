@@ -19,6 +19,9 @@ namespace PureMVC.Core
         private NetworkManager _networkManager;
         private UIManager _uiManager;
         private EnhancedTextManager _enhancedTextManager;
+        private PluginManager _pluginManager;
+        private LockManager _lockManager;
+        private AdsManager _adsManager;
 
         protected void RegisterMessage(IView view, List<string> notiNames)
         {
@@ -143,6 +146,42 @@ namespace PureMVC.Core
                     _enhancedTextManager = Facade.GetManager<EnhancedTextManager>(ManagerName.EnhancedText);
                 }
                 return _enhancedTextManager;
+            }
+        }
+
+        public PluginManager PluginManager
+        {
+            get
+            {
+                if (null == _pluginManager)
+                {
+                    _pluginManager = Facade.GetManager<PluginManager>(ManagerName.Plugin);
+                }
+                return _pluginManager;
+            }
+        }
+
+        public LockManager LockManager
+        {
+            get
+            {
+                if (null == _lockManager)
+                {
+                    _lockManager = Facade.GetManager<LockManager>(ManagerName.Lock);
+                }
+                return _lockManager;
+            }
+        }
+
+        public AdsManager AdsManager
+        {
+            get
+            {
+                if (null == _adsManager)
+                {
+                    _adsManager = Facade.GetManager<AdsManager>(ManagerName.Ads);
+                }
+                return _adsManager;
             }
         }
 

@@ -26,7 +26,7 @@ public class CaptureKit : Base
 
     private RenderTexture Capture()
     {
-        RenderTexture renderTexture = RenderTexture.GetTemporary(_width, _height, 32, RenderTextureFormat.ARGB32);
+        RenderTexture renderTexture = RenderTexture.GetTemporary(_width, _height, 24, RenderTextureFormat.ARGB32);
         renderTexture.autoGenerateMips = false;
         Graphics.SetRenderTarget(renderTexture);
         GL.Clear(true, true, Color.clear);
@@ -57,9 +57,19 @@ public class CaptureKit : Base
         markPos.z = targetLocalPosition.z;
         target.localPosition = markPos;
         RenderTexture renderTexture = Capture();
+        //RenderTexture renderTexture = RenderTexture.GetTemporary(_width, _height, 24);
+        ////RenderTexture renderTexture = new RenderTexture(_width, _height, 0);
+        //renderTexture.autoGenerateMips = false;
+        //Graphics.SetRenderTarget(renderTexture);
+        //GL.Clear(true, true, Color.clear);
+        //RenderTexture markRenderTexture = _camera.targetTexture;
+        //_camera.targetTexture = renderTexture;
+        //_camera.Render();
+
         int width = renderTexture.width;
         int height = renderTexture.height;
         Texture2D texture2d = null;
+        RenderTexture currentActiveRT = RenderTexture.active;
         if (null != leftTop && null != rightBottom)
         {
             Vector2 lt1 = leftTop.GetComponent<RectTransform>().anchoredPosition;
@@ -69,18 +79,21 @@ public class CaptureKit : Base
             rect.y = _height / 2 + rb1.y;
             rect.width = Mathf.CeilToInt(rb1.x - lt1.x);
             rect.height = Mathf.CeilToInt(lt1.y - rb1.y);
-            texture2d = new Texture2D((int)rect.width, (int)rect.height, TextureFormat.ARGB32, false);
             RenderTexture.active = renderTexture;
+            texture2d = new Texture2D((int)rect.width, (int)rect.height, TextureFormat.RGB24, false);
             texture2d.ReadPixels(rect, 0, 0, false);
             texture2d.Apply();
         }
         else
         {
-            texture2d = new Texture2D(width, height, TextureFormat.ARGB32, false);
             RenderTexture.active = renderTexture;
+            texture2d = new Texture2D(width, height, TextureFormat.RGB24, false);
             texture2d.ReadPixels(new Rect(0, 0, width, height), 0, 0);
             texture2d.Apply();
         }
+
+        RenderTexture.active = currentActiveRT;
+
         target.SetParent(parent);
         target.localPosition = targetLocalPosition;
         if (-1 != targetIndex)

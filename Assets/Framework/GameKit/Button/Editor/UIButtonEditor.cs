@@ -31,6 +31,7 @@ public class UIButtonEditor : Editor
         {
             EditorGUILayout.PropertyField(serializedObject.FindProperty("_onClick"), true);
         }
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("_onAnimDone"), true);
 
         serializedObject.ApplyModifiedProperties();
     }

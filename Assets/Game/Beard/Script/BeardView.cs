@@ -47,7 +47,8 @@ public class BeardView : Base
 
     public void Enter()
     {
-        InitModel(()=> {
+        InitModel(() =>
+        {
             SetupTool();
         });
     }
@@ -122,7 +123,7 @@ public class BeardView : Base
                 break;
             case 3:
                 yield return new WaitForSeconds(1);
-                _pageView.GotoPage(6);
+                _pageView.GotoPage(7);
                 break;
         }
     }

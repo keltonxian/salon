@@ -60,15 +60,54 @@ public class Screenshot : PopupView
             _flash.DOFade(0, 0.5f);
         }
         base.StartShow();
+
+        
     }
 
-    public void OnClickClose()
+    private void OnEnable()
     {
-        Close();
+        PluginManager.OnImageSaveSuccessed += OnImageSaveSuccessed;
+        PluginManager.OnImageSaveFailed += OnImageSaveFailed;
+    }
+
+    private void OnDisable()
+    {
+        PluginManager.OnImageSaveSuccessed -= OnImageSaveSuccessed;
+        PluginManager.OnImageSaveFailed -= OnImageSaveFailed;
+    }
+
+    private void OnImageSaveSuccessed()
+    {
+        GameManager.Log("OnImageSaveSuccessed");
+        OnClickClose();
+    }
+
+    private void OnImageSaveFailed()
+    {
+        GameManager.Log("OnImageSaveFailed");
     }
 
     public void OnClickSave()
     {
-
+        PluginManager.OnPermissionAction = (bool isHasPermission, string code) =>
+        {
+            GameManager.Log(string.Format("isHasPermission[{0}] code[{1}]", isHasPermission.ToString(), code));
+            if (true == isHasPermission)
+            {
+                byte[] bytes = _pic.sprite.texture.EncodeToPNG();
+                if (0 == bytes.Length)
+                {
+                    return;
+                }
+                PluginManager.sharePlugin.SaveImage("Screenshot", bytes, bytes.Length);
+            }
+            else
+            {
+                //if Util.IsAndroid() then
+                //    self:OnImageSaveFailed()
+                //end
+            }
+        };
+        PluginManager.RequestPermission();
     }
 }

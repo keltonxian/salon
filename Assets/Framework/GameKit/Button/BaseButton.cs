@@ -18,6 +18,19 @@ public class BaseButton : Base
     private float _scaleTime = 1f;
     private Vector3 _markScale = Vector3.one;
 
+    private bool _isTouchEnabled = true;
+    public bool IsTouchEnabled
+    {
+        get
+        {
+            return _isTouchEnabled;
+        }
+        set
+        {
+            _isTouchEnabled = value;
+        }
+    }
+
     void Update()
     {
         if (_timeWaitNextClick > 0f)
@@ -33,6 +46,10 @@ public class BaseButton : Base
 
     protected bool CheckCanClick ()
     {
+        if (!IsTouchEnabled)
+        {
+            return false;
+        }
         if (_timeWaitNextClick <= 0)
         {
             return true;

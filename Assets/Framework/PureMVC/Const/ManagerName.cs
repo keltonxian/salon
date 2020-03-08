@@ -13,5 +13,8 @@ namespace PureMVC.Const
         public const string Network = "NetworkManager";
         public const string UI = "UIManager";
         public const string EnhancedText = "EnhancedTextManager";
+        public const string Plugin = "PluginManager";
+        public const string Lock = "LockManager";
+        public const string Ads = "AdsManager";
     }
 }

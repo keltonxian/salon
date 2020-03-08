@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
@@ -844,7 +845,7 @@ namespace PureMVC.Manager
                 byte[] bytes = File.ReadAllBytes(isHaveNoEncrypted ? realPath : realPath + ".txt");
                 if (bytes != null) {
                     if (isHaveEncrypted) {
-                        bytes = NetworkManager.ReverseBytes(bytes);
+                        bytes = ReverseBytes(bytes);
                     }
                     Texture2D texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
                     texture.wrapMode = TextureWrapMode.Clamp;
@@ -860,6 +861,67 @@ namespace PureMVC.Manager
                 onLoadFailed?.Invoke(error);
             }, isReadable, _isCheckEncryptFirst);
 #endif
+        }
+
+        public void LoadSpriteFromPrefab(string url, Image image, Callback.CallbackB callback = null)
+        {
+            bool isDone = false;
+            GameObject prefabObject = Resources.Load<GameObject>(url);
+            if (null != prefabObject)
+            {
+                GameObject spriteObject = Instantiate(prefabObject);
+                if (null != spriteObject)
+                {
+                    image.sprite = spriteObject.GetComponent<SpriteRenderer>().sprite;
+                    Destroy(spriteObject);
+                    image.SetNativeSize();
+                    isDone = true;
+                }
+            }
+            if (null != callback)
+            {
+                callback(isDone);
+            }
+        }
+
+        public void LoadSpriteFromPrefab(string url, SpriteRenderer sr, Callback.CallbackB callback = null)
+        {
+            bool isDone = false;
+            GameObject prefabObject = Resources.Load<GameObject>(url);
+            if (null != prefabObject)
+            {
+                GameObject spriteObject = Instantiate(prefabObject);
+                if (null != spriteObject)
+                {
+                    sr.sprite = spriteObject.GetComponent<SpriteRenderer>().sprite;
+                    Destroy(spriteObject);
+                    isDone = true;
+                }
+            }
+            if (null != callback)
+            {
+                callback(isDone);
+            }
+        }
+
+        public void LoadSpriteFromPrefab(string url, Callback.CallbackB callback = null)
+        {
+            bool isDone = false;
+            GameObject prefabObject = Resources.Load<GameObject>(url);
+            if (null != prefabObject)
+            {
+                GameObject spriteObject = Instantiate(prefabObject);
+                if (null != spriteObject)
+                {
+                    //				sr.sprite = spriteObject.GetComponent<SpriteRenderer> ().sprite;
+                    Destroy(spriteObject);
+                    isDone = true;
+                }
+            }
+            if (null != callback)
+            {
+                callback(isDone);
+            }
         }
     }
 }

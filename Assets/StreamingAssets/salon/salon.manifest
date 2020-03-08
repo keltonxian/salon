@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 85179564
+CRC: 2953342741
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -89,3 +89,15 @@ AssetBundleManifest:
       Dependencies:
         Dependency_0: salon_tony_base.unity3d
         Dependency_1: salon_tony_vo.unity3d
+    Info_22:
+      Name: salon_net_loading.unity3d
+      Dependencies: {}
+    Info_23:
+      Name: salon_msgbox.unity3d
+      Dependencies: {}
+    Info_24:
+      Name: salon_shop_mini.unity3d
+      Dependencies: {}
+    Info_25:
+      Name: salon_shop_full.unity3d
+      Dependencies: {}

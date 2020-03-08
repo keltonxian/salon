@@ -254,17 +254,22 @@ public class PopupView : Base
 
     }
 
-    protected void Close()
+    public virtual void OnClickClose()
+    {
+        Close();
+    }
+
+    protected void Close(Action callback = null)
     {
         if (true == _isDone)
         {
             return;
         }
         _isDone = true;
-        DoClose(false);
+        DoClose(false, 0, callback);
     }
 
-    protected void DoClose(bool isDone, int index = 0)
+    protected void DoClose(bool isDone, int index = 0, Action callback = null)
     {
         Hide(() =>
         {
@@ -276,6 +281,7 @@ public class PopupView : Base
             {
                 OnFail.Invoke();
             }
+            callback.Invoke();
             DestroyAll();
         });
     }
