@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1526983490
+CRC: 1471021026
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a78e7a6edaf2964c751f3f113258731e
+    Hash: 85fdf7968e61adea0b4fc5caddce8626
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 8d50497a4946cdd9bbb6bfb40bfa2ee2
+    Hash: b0eaac9cfea709c2f8f08fe62af5193e
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -24,7 +24,7 @@ ClassTypes:
 - Class: 83
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 4128b38263e0a4bbbb294bd50e83afe4, type: 3}
 - Class: 114
@@ -57,7 +57,7 @@ Assets:
 - Assets/Game/_Common/Model/Tony/Tony.prefab
 Dependencies:
 - /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_ui.unity3d
-- /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_beard_face.unity3d
 - /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_tony_base.unity3d
-- /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_tony_vo.unity3d
+- /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_beard_face.unity3d
 - /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_tony_beard.unity3d
+- /Users/kelton/Workspace/salon/salon/Assets/StreamingAssets/salon/salon_tony_vo.unity3d

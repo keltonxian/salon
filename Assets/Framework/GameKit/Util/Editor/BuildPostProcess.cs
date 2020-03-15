@@ -129,7 +129,7 @@ public class BuildPostProcess : IActiveBuildTargetChanged, IPostprocessBuildWith
             bool isSameDir = dir1.Equals(dir2);
 
             string buildOutPutPath1 = pathToBuiltProject + "/Data";
-            string iOSProjectPath1 = Application.dataPath + "/../proj.ios_mac/Data";
+            string iOSProjectPath1 = Application.dataPath + "/../proj.ios/Data";
             if (!isSameDir && Directory.Exists(buildOutPutPath1))
             {
                 if (Directory.Exists(iOSProjectPath1))
@@ -140,7 +140,7 @@ public class BuildPostProcess : IActiveBuildTargetChanged, IPostprocessBuildWith
                 Debug.Log("BuildPostProcess>>>>>>>>>>Replaced 'Data'");
             }
             string buildOutPutPath2 = pathToBuiltProject + "/Classes/Native";
-            string iOSProjectPath2 = Application.dataPath + "/../proj.ios_mac/Classes/Native";
+            string iOSProjectPath2 = Application.dataPath + "/../proj.ios/Classes/Native";
             if (!isSameDir && Directory.Exists(buildOutPutPath2))
             {
                 if (Directory.Exists(iOSProjectPath2))
@@ -153,7 +153,7 @@ public class BuildPostProcess : IActiveBuildTargetChanged, IPostprocessBuildWith
 
             // e.g. in Assets, create a Plugins/iOS folder, put .h .mm inside
             //string buildOutPutPath3 = pathToBuiltProject + "/Libraries/Framework";
-            //string iOSProjectPath3 = Application.dataPath + "/../proj.ios_mac/Libraries/Framework";
+            //string iOSProjectPath3 = Application.dataPath + "/../proj.ios/Libraries/Framework";
             //if (!isSameDir && Directory.Exists(buildOutPutPath3))
             //{
             //    if (Directory.Exists(iOSProjectPath3))
@@ -165,7 +165,7 @@ public class BuildPostProcess : IActiveBuildTargetChanged, IPostprocessBuildWith
             //}
 
             string buildOutPutPath4 = pathToBuiltProject + "/Libraries/libil2cpp";
-            string iOSProjectPath4 = Application.dataPath + "/../proj.ios_mac/Libraries/libil2cpp";
+            string iOSProjectPath4 = Application.dataPath + "/../proj.ios/Libraries/libil2cpp";
             if (!isSameDir && Directory.Exists(buildOutPutPath4))
             {
                 if (Directory.Exists(iOSProjectPath4))
@@ -263,7 +263,7 @@ public class BuildPostProcess : IActiveBuildTargetChanged, IPostprocessBuildWith
         PBXProject project = new PBXProject();
         project.ReadFromString(File.ReadAllText(projectPath));
 
-        string targetId = project.TargetGuidByName(PBXProject.GetUnityTargetName());
+        string targetId = project.GetUnityMainTargetGuid();
 
         // Required Frameworks
         project.AddFrameworkToProject(targetId, "CoreTelephony.framework", false);
