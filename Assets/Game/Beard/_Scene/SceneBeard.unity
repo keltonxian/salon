@@ -94,8 +94,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -216,33 +217,21 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 3
@@ -266,18 +255,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &41637568
 MonoBehaviour:
@@ -340,7 +323,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 41637565}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -349,8 +332,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -360,6 +341,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &41637570
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -383,8 +365,6 @@ MonoBehaviour:
   _onUpdate:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &41637572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,6 +430,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -462,6 +443,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5264,28 +5246,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -5301,18 +5273,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 0
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -5379,7 +5345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 91430818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -5388,8 +5354,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -5399,6 +5363,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &91430824
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5453,7 +5418,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 105500030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -5462,8 +5427,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 24b306f96146042ca8915657739cf89b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -5473,6 +5436,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &105500033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5527,7 +5491,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 108809882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -5536,8 +5500,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: fa13039293eaa486bb05a0eaefa9d268, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -5547,6 +5509,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &108809885
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5748,7 +5711,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 188477975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -5757,8 +5720,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: c605978815cd34471a4b2b97f44a2db9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -5768,6 +5729,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &188477978
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6161,6 +6123,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6173,6 +6136,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -10922,13 +10886,9 @@ MonoBehaviour:
   _onTouchDown:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onTouchUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onClick:
     m_PersistentCalls:
       m_Calls:
@@ -10943,13 +10903,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onAnimDone:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &294291947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10959,7 +10915,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 294291944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -10968,8 +10924,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 8871ade5e4f9840269d8c8d82f8b9261, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -10979,6 +10933,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &294291948
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11033,7 +10988,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 297148351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -11042,8 +10997,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: a2a1e5a442fed421dbba494cc09371d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -11053,6 +11006,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &297148354
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11113,6 +11067,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11125,6 +11080,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -15967,33 +15923,21 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 3
@@ -16017,18 +15961,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &363081941
 MonoBehaviour:
@@ -16091,7 +16029,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 363081938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -16100,8 +16038,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -16111,6 +16047,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &363081943
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16147,8 +16084,6 @@ MonoBehaviour:
   _onUpdate:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!1 &405550533
 GameObject:
   m_ObjectHideFlags: 0
@@ -16277,7 +16212,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 423111580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -16286,8 +16221,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: b40d7942b951e4c608c4165924072bfc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -16297,6 +16230,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &423111583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16553,8 +16487,6 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls:
@@ -16569,8 +16501,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls:
@@ -16585,23 +16515,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 2
@@ -16626,18 +16548,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &624827337
 MonoBehaviour:
@@ -16700,7 +16616,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 624827334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -16709,8 +16625,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -16720,6 +16634,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &624827339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16761,28 +16676,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -16798,18 +16703,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 1
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -16844,7 +16743,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 627213946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -16861,7 +16760,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 627213946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
@@ -16959,7 +16858,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 628344644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -16976,7 +16875,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 628344644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
@@ -17118,6 +17017,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17130,6 +17030,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21869,7 +21770,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 652821930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -21878,8 +21779,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: c150252662f4d435abefec9c1d1d69bb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -21889,6 +21788,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &652821933
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21943,7 +21843,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 767176300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -21952,8 +21852,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f175d8840ba7441d8a772b14cdf574b9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -21963,6 +21861,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &767176303
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21998,7 +21897,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 773768955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -22017,7 +21916,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 773768955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
@@ -22227,7 +22126,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 836919986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -22236,8 +22135,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: b60a2c1e789064de6914113fb1270250, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -22247,6 +22144,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &836919989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22447,7 +22345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 872558993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -22456,8 +22354,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 24b306f96146042ca8915657739cf89b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -22467,6 +22363,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &872558996
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22521,7 +22418,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 908537181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -22530,8 +22427,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: fcb56d34dc2e24e8ba227d8287454db7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -22541,6 +22436,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &908537184
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22631,7 +22527,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 921680662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -22640,8 +22536,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 1f43890f60d184c35af39176856e49c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -22651,6 +22545,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &921680665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22740,7 +22635,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 931422502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -22749,8 +22644,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 8178b04b8f5364b89b6aad7ef6f28dc8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -22760,6 +22653,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &931422505
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22821,7 +22715,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 941393861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -22883,7 +22777,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 955091443}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -22892,8 +22786,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 2b14486c18bdb4cef8ff721ab29bef9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -22903,6 +22795,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &955091446
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22957,7 +22850,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 990250914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -22966,8 +22859,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 96463df45891f44e58f6cbe14744f236, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -22977,6 +22868,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &990250917
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23066,7 +22958,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1026368999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -23075,8 +22967,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 24b306f96146042ca8915657739cf89b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -23086,6 +22976,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1026369002
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23176,7 +23067,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1080068218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -23185,8 +23076,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 2127c8924e2d94b53890107c1d100d31, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -23196,6 +23085,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1080068221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23293,7 +23183,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1083584962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -23381,28 +23271,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -23418,18 +23298,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 0
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -23496,7 +23370,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1088394016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -23505,8 +23379,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -23516,6 +23388,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1088394021
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23557,33 +23430,21 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 2
@@ -23608,18 +23469,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!1 &1095423233
 GameObject:
@@ -23667,7 +23522,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1095423233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -23676,8 +23531,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f175d8840ba7441d8a772b14cdf574b9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -23687,6 +23540,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1095423236
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23813,7 +23667,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1138688231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -23822,8 +23676,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 986eede5118c9416f91a2a185eaa8e0b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -23833,6 +23685,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1138688234
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23985,8 +23838,6 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls:
@@ -24001,8 +23852,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls:
@@ -24017,23 +23866,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 2
@@ -24058,18 +23899,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &1187081310
 MonoBehaviour:
@@ -24132,7 +23967,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1187081306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -24141,8 +23976,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -24152,6 +23985,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1187081312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24177,28 +24011,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -24214,18 +24038,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 0
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -24277,7 +24095,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1203698939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -24286,8 +24104,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 871c59eb894c547cfa392bf5e5a3fb18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -24297,6 +24113,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1203698942
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24351,7 +24168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1247595864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -24360,8 +24177,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 15d4064ca0a94442789b9938bd03acfb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -24371,6 +24186,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1247595867
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24526,28 +24342,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -24563,18 +24369,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 0
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -24641,7 +24441,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1259632165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -24650,8 +24450,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -24661,6 +24459,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1259632171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24715,7 +24514,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1280971613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -24724,8 +24523,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 24b306f96146042ca8915657739cf89b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -24735,6 +24532,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1280971616
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24866,7 +24664,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1288814755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -24883,7 +24681,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1288814755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
@@ -25001,7 +24799,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1314272312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -25010,8 +24808,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 55b86c52d07c64aaeb80828b6aa1f738, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -25021,6 +24817,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1314272315
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25235,7 +25032,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1379151246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -25244,8 +25041,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 24b306f96146042ca8915657739cf89b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -25255,6 +25050,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1379151249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25309,7 +25105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1385751625}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -25318,8 +25114,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 24b306f96146042ca8915657739cf89b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -25329,6 +25123,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1385751628
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25421,7 +25216,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1413687202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -25430,8 +25225,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: fbd03fe4980b34c3f8a76b091fa73d61, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -25441,6 +25234,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1413687205
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25495,7 +25289,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1417309482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -25504,8 +25298,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 7f87b228fba0e4803b9e140ed1c12264, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -25515,6 +25307,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1417309485
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25569,7 +25362,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1443800246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -25578,8 +25371,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 51ea0ed91eed4462abb5cbc56f12adbc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -25589,6 +25380,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1443800249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25649,6 +25441,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -25661,6 +25454,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -30443,7 +30237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1517565076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30520,13 +30314,9 @@ MonoBehaviour:
   _onTouchDown:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onTouchUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onClick:
     m_PersistentCalls:
       m_Calls:
@@ -30541,13 +30331,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onAnimDone:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &1533635899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30557,7 +30343,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1533635896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -30566,8 +30352,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 8932be1613e034436a712c41e2903c64, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -30577,6 +30361,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1533635900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30631,7 +30416,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1554568044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -30640,8 +30425,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f175d8840ba7441d8a772b14cdf574b9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -30651,6 +30434,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1554568047
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30711,6 +30495,7 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -30723,6 +30508,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -35462,7 +35248,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1573210364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -35471,8 +35257,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: a28c5282ea75d45e58a3c9ad05a1ad13, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -35482,6 +35266,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1573210367
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35572,7 +35357,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1579071363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -35581,8 +35366,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: a7d1139161ee74d4aa924730ed4e85be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -35592,6 +35375,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1579071366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35791,7 +35575,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1616261512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -35800,8 +35584,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -35811,6 +35593,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1616261516
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35836,8 +35619,6 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls:
@@ -35852,8 +35633,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls:
@@ -35868,23 +35647,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 2
@@ -35909,18 +35680,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &1616261518
 MonoBehaviour:
@@ -35954,28 +35719,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -35991,18 +35746,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 0
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -36148,8 +35897,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   _pageIndicator: {fileID: 319084351}
   _pageDamp: 0.2
   _isDragOutSideEnabled: 0
@@ -36158,8 +35905,6 @@ MonoBehaviour:
   _onScrollOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPageChange:
     m_PersistentCalls:
       m_Calls:
@@ -36174,8 +35919,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventI, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &1643083206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36185,7 +35928,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1643083203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -36194,8 +35937,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -36205,6 +35946,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1643083207
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36259,7 +36001,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1647613789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -36268,8 +36010,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 0a3f0c5dfe9914cb7ac5e8cce4ab574b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -36279,6 +36019,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1647613792
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36343,13 +36084,9 @@ MonoBehaviour:
   _onTouchDown:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onTouchUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onClick:
     m_PersistentCalls:
       m_Calls:
@@ -36364,13 +36101,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onAnimDone:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &1663908239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36380,7 +36113,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663908236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -36389,8 +36122,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: edc4aa40711dd4720be8eb8f8153b032, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -36400,6 +36131,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1663908240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36526,7 +36258,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679659739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -36535,8 +36267,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 295e1edde8d544cdaaad50ea678a174b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -36546,6 +36276,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1679659742
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36628,28 +36359,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -36665,18 +36386,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 0
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -36743,7 +36458,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1680928600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -36752,8 +36467,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -36763,6 +36476,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1680928606
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36855,7 +36569,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1772839568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -36864,8 +36578,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f175d8840ba7441d8a772b14cdf574b9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -36875,6 +36587,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1772839571
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37057,7 +36770,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1822724483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -37066,8 +36779,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 9d50cf50dd1a440a5a76f3fc70c45d0e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -37077,6 +36788,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1822724486
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37141,13 +36853,9 @@ MonoBehaviour:
   _onTouchDown:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onTouchUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onClick:
     m_PersistentCalls:
       m_Calls:
@@ -37162,13 +36870,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onAnimDone:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &1829022204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37178,7 +36882,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1829022201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -37187,8 +36891,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f1fe781aa416b470d84a1817c8e4203b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -37198,6 +36900,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1829022205
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37288,7 +36991,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1892463207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -37297,8 +37000,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 986eede5118c9416f91a2a185eaa8e0b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -37308,6 +37009,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1892463210
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37398,7 +37100,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1927560521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -37407,8 +37109,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: fa5929cef56624e8baf1821f74494406, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -37418,6 +37118,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1927560524
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37557,8 +37258,6 @@ MonoBehaviour:
   _onUpdate:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &1943392867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37589,33 +37288,21 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 3
@@ -37639,18 +37326,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &1943392869
 MonoBehaviour:
@@ -37713,7 +37394,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943392864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -37722,8 +37403,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -37733,6 +37412,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1943392871
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37828,8 +37508,6 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls:
@@ -37844,18 +37522,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls:
@@ -37870,13 +37542,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 1
@@ -37901,18 +37569,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &1946937605
 MonoBehaviour:
@@ -37975,7 +37637,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1946937599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -37984,8 +37646,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -37995,6 +37655,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1946937607
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38049,7 +37710,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1961653384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -38058,8 +37719,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 24b306f96146042ca8915657739cf89b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -38069,6 +37728,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1961653387
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38299,33 +37959,21 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 2
@@ -38350,18 +37998,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &1996599755
 MonoBehaviour:
@@ -38424,7 +38066,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1996599752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -38433,8 +38075,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -38444,6 +38084,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1996599757
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38484,28 +38125,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -38521,18 +38152,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 1
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -38615,8 +38240,6 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls:
@@ -38631,18 +38254,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls:
@@ -38657,8 +38274,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -38674,18 +38289,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 1
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -38752,7 +38361,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1997124489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -38761,8 +38370,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -38772,6 +38379,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1997124495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38812,33 +38420,21 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 1
@@ -38862,18 +38458,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!1 &2001300124
 GameObject:
@@ -38931,13 +38521,9 @@ MonoBehaviour:
   _onTouchDown:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onTouchUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onClick:
     m_PersistentCalls:
       m_Calls:
@@ -38952,13 +38538,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventPE, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onAnimDone:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &2001300127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38968,7 +38550,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2001300124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -38977,8 +38559,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 526adf3d5c27a43b69da307cc175fbfa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -38988,6 +38568,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &2001300128
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39165,28 +38746,18 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isSendEventOnce: 0
   _onHoverCollision:
     m_PersistentCalls:
@@ -39202,18 +38773,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onHoverOutCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onDropCollision:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isTriggerAll: 0
   _arrayColliderObject: []
   _soundOnHover: {fileID: 0}
@@ -39280,7 +38845,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2100657304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -39289,8 +38854,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -39300,6 +38863,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &2100657309
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39527,33 +39091,21 @@ MonoBehaviour:
   _onToolPreStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolStart:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolEnd:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onToolTweenOver:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onCutShape:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _isCheckOnUI: 0
   _mode: 2
   _operation: 3
@@ -39577,18 +39129,12 @@ MonoBehaviour:
   _onPainterPercentage:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventF, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onPainterFinish:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _onInArea:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventB, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   _arrayDrawMainTex: []
 --- !u!114 &2136180553
 MonoBehaviour:
@@ -39651,7 +39197,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2136180550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -39660,8 +39206,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -39671,6 +39215,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &2136180555
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39694,8 +39239,6 @@ MonoBehaviour:
   _onUpdate:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Callback+UnityEventV, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &2136180557
 MonoBehaviour:
   m_ObjectHideFlags: 0

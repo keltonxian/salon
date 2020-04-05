@@ -281,7 +281,10 @@ public class PopupView : Base
             {
                 OnFail.Invoke();
             }
-            callback.Invoke();
+            if (null != callback)
+            {
+                callback.Invoke();
+            }
             DestroyAll();
         });
     }

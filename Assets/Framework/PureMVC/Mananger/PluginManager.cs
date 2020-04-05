@@ -239,7 +239,7 @@ namespace PureMVC.Manager
                 if (_storePlugin == null)
                 {
                     _storePlugin = new StorePlugin();
-                    _storePlugin.SetGameObjectNameForIAP(gameObject.name);
+                    //_storePlugin.SetGameObjectNameForIAP(gameObject.name);
                 }
                 return _storePlugin;
             }
@@ -310,6 +310,7 @@ namespace PureMVC.Manager
         /// <param name="productId">Product identifier.</param>
         public void PurchaseById(string productId)
         {
+            /**
             if (IsPurchased(productId))
             {
                 internalPlugin.popAlertDialog(GetLocalization(AlreadyPurchased));
@@ -322,18 +323,21 @@ namespace PureMVC.Manager
                 return;
             }
             storePlugin.PurchaseById(productId);
+            */
         }
         /// <summary>
         /// Restore 所有
         /// </summary>
         public void RestorePurchase()
         {
+            /**
             if (!PluginManager.IsNetworkAvailable)
             {
                 internalPlugin.popAlertDialog(GetLocalization(PurchaseNoNetwork));
                 return;
             }
             storePlugin.RestoreAllPurchases();
+            */
         }
 
         /// <summary>
@@ -353,11 +357,13 @@ namespace PureMVC.Manager
         /// <param name="iapIds">Iap identifiers.</param>
         public void GetIAPInfos(string[] iapIds)
         {
+            /**
 #if UNITY_EDITOR
             OnProductsInfos(null);
 #else
 		storePlugin.requestProductInfo(iapIds);
 #endif
+            */
         }
 
         //iap回调

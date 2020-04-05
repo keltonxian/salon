@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{1A7F6485-5F6D-61A9-FEC4-013102C77216}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Framework/GameKit/Util/Editor/BuildPostProcess.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Framework/GameKit/UGUI/Script/PopupView.cs">
     <Files>
-      <File FileName="Assets/Framework/PureMVC/Mananger/DataManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/DataManager.cs" />
       <File FileName="Assets/Framework/PureMVC/Mananger/Data.cs" />
       <File FileName="Assets/Game/Beard/Script/BeardView.cs" />
       <File FileName="Assets/Game/Home/Script/HomeManager.cs" />
@@ -14,8 +14,8 @@
       <File FileName="Assets/Framework/PureMVC/Core/Base.cs" />
       <File FileName="Assets/Game/_Common/Popup/Screenshot/Script/Screenshot.cs" />
       <File FileName="Assets/Game/_Common/Popup/Shop/Script/ShopController.cs" />
-      <File FileName="Assets/Game/_Common/Popup/Shop/Script/ShopHandler.cs" Line="163" Column="38" />
-      <File FileName="Assets/Framework/GameKit/UGUI/Script/PopupView.cs" />
+      <File FileName="Assets/Game/_Common/Popup/Shop/Script/ShopHandler.cs" />
+      <File FileName="Assets/Framework/GameKit/UGUI/Script/PopupView.cs" Line="269" Column="9" />
       <File FileName="Assets/Game/_Common/Popup/Shop/Script/LockItemHandler.cs" />
       <File FileName="Assets/Framework/PureMVC/Mananger/AdsManager.cs" />
       <File FileName="Assets/Framework/PureMVC/Mananger/LockManager.cs" />
@@ -25,11 +25,11 @@
       <File FileName="Assets/Framework/PureMVC/Mananger/UIManager.cs" />
       <File FileName="Assets/Game/_Common/Popup/MsgBox/Script/MsgBox.cs" />
       <File FileName="Assets/Framework/GameKit/CustomMenu/Editor/PackResource.cs" />
-      <File FileName="Assets/Framework/PureMVC/Mananger/PluginManager.cs" />
+      <File FileName="Assets/Framework/PureMVC/Mananger/PluginManager.cs" Line="366" Column="15" />
       <File FileName="Assets/Framework/GameKit/Plugin/StorePlugin.cs" />
       <File FileName="Assets/Framework/GameKit/Plugin/SharePlugin.cs" />
       <File FileName="Assets/Framework/GameKit/Plugin/InternalPlugin.cs" />
-      <File FileName="Assets/Framework/GameKit/Util/Editor/BuildPostProcess.cs" Line="125" Column="58" />
+      <File FileName="Assets/Framework/GameKit/Util/Editor/BuildPostProcess.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -51,12 +51,12 @@
                   </Node>
                   <Node name="Plugin" expanded="True" />
                   <Node name="UGUI" expanded="True">
-                    <Node name="Script" expanded="True" />
+                    <Node name="Script" expanded="True">
+                      <Node name="PopupView.cs" selected="True" />
+                    </Node>
                   </Node>
                   <Node name="Util" expanded="True">
-                    <Node name="Editor" expanded="True">
-                      <Node name="BuildPostProcess.cs" selected="True" />
-                    </Node>
+                    <Node name="Editor" expanded="True" />
                   </Node>
                 </Node>
                 <Node name="PureMVC" expanded="True">
@@ -110,7 +110,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a387a9ea-1109-4197-8825-5b49ee2b0d3e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2e39a170-340e-4e29-9adb-370bb0560245" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

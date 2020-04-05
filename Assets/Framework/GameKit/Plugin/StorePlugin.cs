@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 public class StorePlugin
 {
-    /* Interface to native implementation */
+/**
 #if UNITY_IOS
     [DllImport("__Internal")]
     private static extern void _SetGameObjectNameForIAP(string gameObjectName);
@@ -71,4 +71,5 @@ public class StorePlugin
 #endif
         }
     }
+*/
 }

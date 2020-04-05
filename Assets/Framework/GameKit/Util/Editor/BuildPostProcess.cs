@@ -152,17 +152,17 @@ public class BuildPostProcess : IActiveBuildTargetChanged, IPostprocessBuildWith
             }
 
             // e.g. in Assets, create a Plugins/iOS folder, put .h .mm inside
-            //string buildOutPutPath3 = pathToBuiltProject + "/Libraries/Framework";
-            //string iOSProjectPath3 = Application.dataPath + "/../proj.ios/Libraries/Framework";
-            //if (!isSameDir && Directory.Exists(buildOutPutPath3))
-            //{
-            //    if (Directory.Exists(iOSProjectPath3))
-            //    {
-            //        DeleteFolder(iOSProjectPath3);
-            //    }
-            //    Directory.Move(buildOutPutPath3, iOSProjectPath3);
-            //    Debug.Log("BuildPostProcess>>>>>>>>>>Replaced 'Framework'");
-            //}
+            string buildOutPutPath3 = pathToBuiltProject + "/Libraries/Framework";
+            string iOSProjectPath3 = Application.dataPath + "/../proj.ios/Libraries/Framework";
+            if (!isSameDir && Directory.Exists(buildOutPutPath3))
+            {
+                if (Directory.Exists(iOSProjectPath3))
+                {
+                    DeleteFolder(iOSProjectPath3);
+                }
+                Directory.Move(buildOutPutPath3, iOSProjectPath3);
+                Debug.Log("BuildPostProcess>>>>>>>>>>Replaced 'Framework'");
+            }
 
             string buildOutPutPath4 = pathToBuiltProject + "/Libraries/libil2cpp";
             string iOSProjectPath4 = Application.dataPath + "/../proj.ios/Libraries/libil2cpp";
@@ -278,13 +278,13 @@ public class BuildPostProcess : IActiveBuildTargetChanged, IPostprocessBuildWith
         project.AddFrameworkToProject(targetId, "PassKit.framework", false);
         project.AddFrameworkToProject(targetId, "Social.framework", false);
         project.AddFrameworkToProject(targetId, "CoreData.framework", false);
-        project.AddFrameworkToProject(targetId, "AdSupport.framework", false);
-        project.AddFrameworkToProject(targetId, "StoreKit.framework", false);
+        //project.AddFrameworkToProject(targetId, "AdSupport.framework", false);
+        //project.AddFrameworkToProject(targetId, "StoreKit.framework", false);
 
-        if (project.ContainsFramework(targetId, "iAd.framework"))
-        {
-            project.RemoveFrameworkFromProject(targetId, "iAd.framework");
-        }
+        //if (project.ContainsFramework(targetId, "iAd.framework"))
+        //{
+        //    project.RemoveFrameworkFromProject(targetId, "iAd.framework");
+        //}
 
         project.AddFileToBuild(targetId, project.AddFile("usr/lib/libz.1.2.5.dylib", "Frameworks/libz.1.2.5.dylib", PBXSourceTree.Sdk));
         project.AddFileToBuild(targetId, project.AddFile("usr/lib/libz.dylib", "Frameworks/libz.dylib", PBXSourceTree.Sdk));
